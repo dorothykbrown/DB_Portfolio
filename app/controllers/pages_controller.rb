@@ -2,6 +2,12 @@ class PagesController < ApplicationController
   def home
   end
 
-  def components
+  def about
+  end
+
+  def projects
+  end
+
+  def experience
   end
 end
