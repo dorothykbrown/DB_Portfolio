@@ -2,8 +2,9 @@
   background: #F4F4F4;
   justify-content: space-between;
   height: 75px;
+  width: 100%;
   color: rgba(0,0,0,0.3);
-  position: sticky;
+  position: fixed;
   bottom: 0px;
 
   .fa-heart {
