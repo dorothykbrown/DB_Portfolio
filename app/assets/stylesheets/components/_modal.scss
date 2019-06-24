@@ -2,11 +2,19 @@
   padding: 20px;
 
   img {
-    max-height: 300px;
+    max-height: 80%;
     margin: 0 auto;
   }
 
   a {
     margin: 0 auto;
+  }
+
+  .carousel-control-next {
+   filter: invert(50%);
+  }
+
+  .carousel-control-prev {
+    filter: invert(50%);
   }
 }
