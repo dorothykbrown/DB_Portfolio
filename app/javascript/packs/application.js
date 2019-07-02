@@ -7,7 +7,7 @@ function filterProjects(){
   let elementStructural = element.querySelector(".structural");
   let elementDeveloper = element.querySelector(".developer");
 
-  tab.addEventListener(click, (event) => {
+  tab.addEventListener("click", (event) => {
     // Do something (callback)
     switch(tab) {
     case "All":
@@ -58,5 +58,8 @@ function changeActiveClass(){
     });
   }
 }
+
+filterProjects();
+changeActiveClass();
 
 export { filterProjects, changeActiveClass };
