@@ -29,19 +29,19 @@
   </div>
 
   <div class="col-md-12 example-title">
-      <h2>Skills</h2>
-      <div class="skill-grid">
-        <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389364/006-ruby_chung7.png" alt="Ruby">
-        <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389035/rails_logo_opqd62.png" alt="Ruby On Rails">
-        <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389364/001-javascript_pwdmxn.png" alt="JavaScript">
-        <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389037/Bootstrap_Icon_ej1hif.png" alt="Bootstrap">
-        <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389364/002-css_som23l.png" alt="CSS">
-        <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389364/005-sass_hzuvmw.png" alt="Sass">
-        <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389364/003-html-5_j0xxpm.png" alt="HTML">
-        <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389364/004-github_h7q7lk.png" alt="GitHub">
-        <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389034/icon_git_z08two.png" alt="Git">
-        <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389034/Heroku_Icon_xhttxb.png" alt="Heroku">
-      </div>
+    <h2>Skills</h2>
+  </div>
+  <div class="skill-grid">
+    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389364/006-ruby_chung7.png" alt="Ruby">
+    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389035/rails_logo_opqd62.png" alt="Ruby On Rails">
+    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389364/001-javascript_pwdmxn.png" alt="JavaScript">
+    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389037/Bootstrap_Icon_ej1hif.png" alt="Bootstrap">
+    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389364/002-css_som23l.png" alt="CSS">
+    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389364/005-sass_hzuvmw.png" alt="Sass">
+    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389364/003-html-5_j0xxpm.png" alt="HTML">
+    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389364/004-github_h7q7lk.png" alt="GitHub">
+    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389034/icon_git_z08two.png" alt="Git">
+    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389034/Heroku_Icon_xhttxb.png" alt="Heroku">
   </div>
 </div>
 
@@ -50,25 +50,40 @@
   <div class="col-md-12 example-title">
       <h2>Featured Projects</h2>
   </div>
-  <ul id="project-type-selector" class="list-inline tabs-underlined">
-    <li>
-      <a href="#" class="tab-underlined active">All</a>
-    </li>
-    <li>
-      <a href="#" class="tab-underlined structural">Structural</a>
-    </li>
-    <li>
-      <a href="#" class="tab-underlined developer">Developer</a>
-    </li>
-  </ul>
 
-  <div class="container">
+  <ul id="project-type-selector" class="list-inline tabs-underlined">
+      <li id="filter__All" class="active">All</li>
+      <li id="filter__Structural"  data-category="structural">Structural</li>
+      <li id="filter__Developer"  data-category="developer">Developer</li>
+       <!--  <input type="radio" id="all" name="type" />
+        <label for="all">All</label> -->
+        <!-- <input type="radio" id="developer" name="type" />
+        <label for="developer">Developer</label>
+        <input type="radio" id="structural" name="type" />
+        <label for="structural">Structural</label> -->
+<!--    <input type="radio" id="developer" name="type" />
+        <label for="developer">Developer</label>
+        <input type="radio" id="developer" name="type" />
+        <label for="developer">Developer</label> -->
+<!--         <input type="radio" id="developer" name="type" />
+        <label for="developer">Developer</label>
+      </li>
+    </ul> -->
+
+  <div class="container filter-items">
+   <!--  <input type="radio" id="all" name="type" />
+    <label for="all">All</label>
+    <input type="radio" id="structural" name="type" />
+    <label for="structural">Structural</label>
+    <input type="radio" id="developer" name="type" />
+    <label for="developer">Developer</label> -->
+
     <div class="cards-1">
-      <div class="flip-card">
-        <div class="flip-card-inner">
+      <div class="flip-card structural filter-item" data-category="structural">
+        <div class="flip-card-inner structural">
           <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159628/EastFlatbush.png)">
           </div>
-          <div class="card-info">
+          <div class="card-info structural">
             <h4>East Flatbush Library</h4>
             <p>Complete renovation of an existing library building that once completed will create a bright, central patron area full of natural light in addition to an innovative façade.
             </p>
@@ -80,11 +95,11 @@
         </div>
       </div>
 
-      <div class="flip-card">
-        <div class="flip-card-inner">
+      <div class="flip-card structural filter-item" data-category="structural">
+        <div class="flip-card-inner structural">
           <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/ParkAveSyn.png)">
           </div>
-          <div class="card-info">
+          <div class="card-info structural">
             <h4>Park Avenue Synagogue</h4>
             <p>Renovation of the iconic Park Avenue Synagogue. The renovation included the removal of about 70% of the 4th floor slab and required the re-support of the columns above.
             </p>
@@ -96,11 +111,11 @@
         </div>
       </div>
 
-      <div class="flip-card">
-        <div class="flip-card-inner">
+      <div class="flip-card structural filter-item" data-category="structural">
+        <div class="flip-card-inner structural">
           <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/Pier57.png)">
           </div>
-          <div class="card-info">
+          <div class="card-info structural">
             <h4>Pier 57</h4>
             <p>Conversion of historic shipping terminal listed on State and National Registers into a retail, arts and entertainment, office and public park complex. The interior will feature a market with shops and cafes.</p>
             <!-- Button trigger modal -->
@@ -113,11 +128,11 @@
     </div>
 
     <div class="cards-2">
-      <div class="flip-card">
-        <div class="flip-card-inner">
+      <div class="flip-card developer filter-item" data-category="developer">
+        <div class="flip-card-inner developer">
           <div class="card-project developer" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159627/WhimAway.png)">
           </div>
-          <div class="card-info">
+          <div class="card-info developer">
             <h4>WhimAway</h4>
             <p>Developed a responsive clone of AirBnb allowing users to rent Whimsical properties--Castles, Treehouses, Sailboats</p>
             <!-- Button trigger modal -->
@@ -128,11 +143,11 @@
         </div>
       </div>
 
-      <div class="flip-card">
-        <div class="flip-card-inner">
+      <div class="flip-card developer filter-item" data-category="developer">
+        <div class="flip-card-inner developer">
           <div class="card-project developer" id="special-card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/InstaItinerary.png)">
           </div>
-          <div class="card-info">
+          <div class="card-info developer">
             <h4>InstaItinerary</h4>
             <p>Developed a responsive web app that generates an itinerary of events based on user preferences and amount of time they have available.</p>
             <!-- Button trigger modal -->
@@ -145,11 +160,11 @@
     </div>
 
     <div class="cards-1">
-      <div class="flip-card">
-        <div class="flip-card-inner">
+      <div class="flip-card structural filter-item" data-category="structural">
+        <div class="flip-card-inner structural">
           <div class="card-project structural" id="special-card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/ParkAveSouth.png)">
           </div>
-          <div class="card-info">
+          <div class="card-info structural">
             <h4>Park Avenue South</h4>
             <p>Silman was involved in the design to transform the former United Charities Building, an existing 9-story structure into an 18-story commercial and residential building.</p>
             <!-- Button trigger modal -->
@@ -160,11 +175,11 @@
         </div>
       </div>
 
-      <div class="flip-card">
-        <div class="flip-card-inner">
+      <div class="flip-card structural filter-item" data-category="structural">
+        <div class="flip-card-inner structural">
           <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159625/475TenthAve.png)">
           </div>
-          <div class="card-info">
+          <div class="card-info structural">
             <h4>475 10th Avenue</h4>
             <p>Fit-out of the twelfth and thirteenth floors of an existing building for office space including the addition of 50-ft long interior bridge.
             </p>
@@ -176,11 +191,11 @@
         </div>
       </div>
 
-      <div class="flip-card">
-        <div class="flip-card-inner">
+      <div class="flip-card structural filter-item" data-category="structural">
+        <div class="flip-card-inner structural">
           <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159625/41W76St.png)">
           </div>
-          <div class="card-info">
+          <div class="card-info structural">
             <h4>West 76th Street</h4>
             <p>Silman was involved in a gut-renovation of a townhouse residence including the design of 5 different stair types to connect the interior and new rooftop green spaces.
             </p>
@@ -197,7 +212,7 @@
 
 <!-- Experience -->
 <div class="experience" id="experience">
-    <script src="https://use.typekit.net/bkt6ydm.js"></script>
+  <script src="https://use.typekit.net/bkt6ydm.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   <div class="container-fluid">
