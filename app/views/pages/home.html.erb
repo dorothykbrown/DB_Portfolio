@@ -52,83 +52,74 @@
   </div>
 
   <ul id="project-type-selector" class="list-inline tabs-underlined">
-      <li id="filter__All" class="active">All</li>
-      <li id="filter__Structural"  data-category="structural">Structural</li>
-      <li id="filter__Developer"  data-category="developer">Developer</li>
-       <!--  <input type="radio" id="all" name="type" />
-        <label for="all">All</label> -->
-        <!-- <input type="radio" id="developer" name="type" />
-        <label for="developer">Developer</label>
-        <input type="radio" id="structural" name="type" />
-        <label for="structural">Structural</label> -->
-<!--    <input type="radio" id="developer" name="type" />
-        <label for="developer">Developer</label>
-        <input type="radio" id="developer" name="type" />
-        <label for="developer">Developer</label> -->
-<!--         <input type="radio" id="developer" name="type" />
-        <label for="developer">Developer</label>
-      </li>
-    </ul> -->
+
+
 
   <div class="container filter-items">
-   <!--  <input type="radio" id="all" name="type" />
+
+    <input class="card-filters" type="radio" id="all" name="color"/>
     <label for="all">All</label>
-    <input type="radio" id="structural" name="type" />
+    <input class="card-filters"type="radio" id="structural" name="color" />
     <label for="structural">Structural</label>
-    <input type="radio" id="developer" name="type" />
-    <label for="developer">Developer</label> -->
+    <input class="card-filters" type="radio" id="developer" name="color"/>
+    <label for="developer">Developer</label>
 
-    <div class="cards-1">
-      <div class="flip-card structural filter-item" data-category="structural">
-        <div class="flip-card-inner structural">
-          <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159628/EastFlatbush.png)">
+
+      <div class="tile structural">
+        <div class="flip-card structural filter-item" data-category="structural">
+          <div class="flip-card-inner structural">
+            <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159628/EastFlatbush.png)">
+            </div>
+            <div class="card-info structural">
+              <h4>East Flatbush Library</h4>
+              <p>Complete renovation of an existing library building that once completed will create a bright, central patron area full of natural light in addition to an innovative façade.
+              </p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-EFL">
+                More Information
+              </button>
+            </div>
           </div>
-          <div class="card-info structural">
-            <h4>East Flatbush Library</h4>
-            <p>Complete renovation of an existing library building that once completed will create a bright, central patron area full of natural light in addition to an innovative façade.
-            </p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-EFL">
-              More Information
-            </button>
+        </div>
+      </div>
+      <div class="tile structural">
+        <div class="flip-card structural filter-item" data-category="structural">
+          <div class="flip-card-inner structural">
+            <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/ParkAveSyn.png)">
+            </div>
+            <div class="card-info structural">
+              <h4>Park Avenue Synagogue</h4>
+              <p>Renovation of the iconic Park Avenue Synagogue including the removal of about 70% of the 4th floor slab and the re-support of the columns above.
+              </p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-PASyn">
+                More Information
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile structural">
+        <div class="flip-card structural filter-item" data-category="structural">
+          <div class="flip-card-inner structural">
+            <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/Pier57.png)">
+            </div>
+            <div class="card-info structural">
+              <h4>Pier 57</h4>
+              <p>Conversion of historic shipping terminal listed on State and National Registers into a retail, arts and entertainment, office and public park complex.</p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-Pier57">
+                More Information
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="flip-card structural filter-item" data-category="structural">
-        <div class="flip-card-inner structural">
-          <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/ParkAveSyn.png)">
-          </div>
-          <div class="card-info structural">
-            <h4>Park Avenue Synagogue</h4>
-            <p>Renovation of the iconic Park Avenue Synagogue. The renovation included the removal of about 70% of the 4th floor slab and required the re-support of the columns above.
-            </p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-PASyn">
-              More Information
-            </button>
-          </div>
-        </div>
-      </div>
 
-      <div class="flip-card structural filter-item" data-category="structural">
-        <div class="flip-card-inner structural">
-          <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/Pier57.png)">
-          </div>
-          <div class="card-info structural">
-            <h4>Pier 57</h4>
-            <p>Conversion of historic shipping terminal listed on State and National Registers into a retail, arts and entertainment, office and public park complex. The interior will feature a market with shops and cafes.</p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal-Pier57">
-              More Information
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="cards-2">
-      <div class="flip-card developer filter-item" data-category="developer">
+      <div class="tile developer">
+        <div class="flip-card developer filter-item" data-category="developer">
         <div class="flip-card-inner developer">
           <div class="card-project developer" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159627/WhimAway.png)">
           </div>
@@ -143,7 +134,9 @@
         </div>
       </div>
 
-      <div class="flip-card developer filter-item" data-category="developer">
+      </div>
+      <div class="tile developer">
+        <div class="flip-card developer filter-item" data-category="developer">
         <div class="flip-card-inner developer">
           <div class="card-project developer" id="special-card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/InstaItinerary.png)">
           </div>
@@ -157,10 +150,12 @@
           </div>
         </div>
       </div>
-    </div>
+      </div>
 
-    <div class="cards-1">
-      <div class="flip-card structural filter-item" data-category="structural">
+
+
+      <div class="tile structural">
+        <div class="flip-card structural filter-item" data-category="structural">
         <div class="flip-card-inner structural">
           <div class="card-project structural" id="special-card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/ParkAveSouth.png)">
           </div>
@@ -169,13 +164,14 @@
             <p>Silman was involved in the design to transform the former United Charities Building, an existing 9-story structure into an 18-story commercial and residential building.</p>
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-              Launch demo modal
+              More Information
             </button>
           </div>
         </div>
       </div>
-
-      <div class="flip-card structural filter-item" data-category="structural">
+      </div>
+      <div class="tile structural">
+        <div class="flip-card structural filter-item" data-category="structural">
         <div class="flip-card-inner structural">
           <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159625/475TenthAve.png)">
           </div>
@@ -190,8 +186,9 @@
           </div>
         </div>
       </div>
-
-      <div class="flip-card structural filter-item" data-category="structural">
+      </div>
+      <div class="tile structural">
+        <div class="flip-card structural filter-item" data-category="structural">
         <div class="flip-card-inner structural">
           <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159625/41W76St.png)">
           </div>
@@ -206,7 +203,15 @@
           </div>
         </div>
       </div>
+      </div>
+
+    <div class="cards-1">
     </div>
+    <div class="cards-2">
+    </div>
+    <div class="cards-1">
+    </div>
+
   </div>
 </div>
 
