@@ -2,12 +2,31 @@
   padding: 20px;
 
   img {
-    max-height: 80%;
+    // max-width: 100%;
+    // height: auto;
+    max-height: 400px;
+    width: auto;
     margin: 0 auto;
   }
 
   a {
     margin: 0 auto;
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  ul {
+    li {
+      text-align: left;
+    }
+  }
+
+  .large-photo {
+    max-width:300px;
+    height: auto;
   }
 
   .carousel-control-next {

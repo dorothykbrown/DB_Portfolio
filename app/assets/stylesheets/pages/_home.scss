@@ -333,121 +333,127 @@ a {
         MOD: TIMELINE SPLIT
     ----------------------------------------------*/
 
-        .timeline-split {
-            @media (min-width: 768px) {
-                .timeline {
-                    display: table;
-                }
-                .timeline-item {
-                    display: table-row;
-                    padding: 0;
-                }
-                .timeline-info,
-                .timeline-marker,
-                .timeline-content,
-                .period .timeline-info {
-                    display: table-cell;
-                    vertical-align: top;
-                }
-                .timeline-marker {
-                    position: relative;
-                }
-                .timeline-content {
-                    padding-left: 30px;
-                }
-                .timeline-info {
-                    padding-right: 30px;
-                }
-                .period .timeline-title {
-                    position: relative;
-                    left: -45px;
-                }
+    .timeline-split {
+        @media (min-width: 768px) {
+            .timeline {
+                display: table;
+            }
+            .timeline-item {
+                display: table-row;
+                padding: 0;
+            }
+            .timeline-info,
+            .timeline-marker,
+            .timeline-content,
+            .period .timeline-info {
+                display: table-cell;
+                vertical-align: top;
+            }
+            .timeline-marker {
+                position: relative;
+            }
+            .timeline-content {
+                padding-left: 30px;
+            }
+            .timeline-info {
+                padding-right: 30px;
+            }
+            .period .timeline-title {
+                position: relative;
+                left: -45px;
             }
         }
+    }
 
     /*----------------------------------------------
-        MOD: TIMELINE CENTERED
+    MOD: TIMELINE CENTERED
     ----------------------------------------------*/
 
-        .timeline-centered {
-            @extend .timeline-split;
+    .timeline-centered {
+        @extend .timeline-split;
 
 
-            @media (min-width: 992px) {
-                &,
-                .timeline-item,
-                .timeline-info,
-                .timeline-marker,
-                .timeline-content {
-                    display: block;
-                    margin: 0;
-                    padding: 0;
-                }
-                .timeline-item {
-                    padding-bottom: 40px;
-                    overflow: hidden;
-                }
-                .timeline-marker {
-                    position: absolute;
-                    left: 50%;
-                    margin-left: -7.5px;
-                }
-                .timeline-info,
-                .timeline-content {
-                    width: 50%;
-                }
-                > .timeline-item:nth-child(odd) .timeline-info {
-                    float: left;
-                    text-align: right;
-                    padding-right: 30px;
-                }
-                > .timeline-item:nth-child(odd) .timeline-content {
-                    float: right;
-                    text-align: left;
-                    padding-left: 30px;
-                }
-                > .timeline-item:nth-child(even) .timeline-info {
-                    float: right;
-                    text-align: left;
-                    padding-left: 30px;
-                }
-                > .timeline-item:nth-child(even) .timeline-content {
-                    float: left;
-                    text-align: right;
-                    padding-right: 30px;
-                }
-                > .timeline-item.period .timeline-content {
-                    float: none;
-                    padding: 0;
-                    width: 100%;
-                    text-align: center;
-                }
-                .timeline-item.period {
-                    padding: 50px 0 90px;
-                }
-                .period .timeline-marker:after {
-                    height: 30px;
-                    bottom: 0;
-                    top: auto;
-                }
-                .period .timeline-title {
-                    left: auto;
-                }
+        @media (min-width: 992px) {
+            &,
+            .timeline-item,
+            .timeline-info,
+            .timeline-marker,
+            .timeline-content {
+                display: block;
+                margin: 0;
+                padding: 0;
+            }
+            .timeline-item {
+                padding-bottom: 40px;
+                overflow: hidden;
+            }
+            .timeline-marker {
+                position: absolute;
+                left: 50%;
+                margin-left: -7.5px;
+            }
+            .timeline-info,
+            .timeline-content {
+                width: 50%;
+            }
+            > .timeline-item:nth-child(odd) .timeline-info {
+                float: left;
+                text-align: right;
+                padding-right: 30px;
+            }
+            > .timeline-item:nth-child(odd) .timeline-content {
+                float: right;
+                text-align: left;
+                padding-left: 30px;
+            }
+            > .timeline-item:nth-child(even) .timeline-info {
+                float: right;
+                text-align: left;
+                padding-left: 30px;
+            }
+            > .timeline-item:nth-child(even) .timeline-content {
+                float: left;
+                text-align: right;
+                padding-right: 30px;
+            }
+            > .timeline-item.period .timeline-content {
+                float: none;
+                padding: 0;
+                width: 100%;
+                text-align: center;
+            }
+            .timeline-item.period {
+                padding: 50px 0 90px;
+            }
+            .period .timeline-marker:after {
+                height: 30px;
+                bottom: 0;
+                top: auto;
+            }
+            .period .timeline-title {
+                left: auto;
             }
         }
+    }
 
     /*----------------------------------------------
         MOD: MARKER OUTLINE
     ----------------------------------------------*/
 
-        .marker-outline {
-            .timeline-marker {
-                &:before {
-                    background: transparent;
-                    border-color: $primary-color;
-                }
-            }
-            .timeline-item:hover .timeline-marker:before {
-                background: $primary-color;
+    .marker-outline {
+        .timeline-marker {
+            &:before {
+                background: transparent;
+                border-color: $primary-color;
             }
         }
+        .timeline-item:hover .timeline-marker:before {
+            background: $primary-color;
+        }
+    }
+
+
+.col-sm-12, .col-xs-8 {
+  padding-top: 30px;
+}
+
