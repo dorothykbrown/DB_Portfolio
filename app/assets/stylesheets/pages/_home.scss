@@ -1,7 +1,6 @@
 // Specific CSS for your home-page
 // About
 div {
-
   .container {
     padding: 10px 0px 100px 0px;
     width: 100%;
@@ -33,14 +32,12 @@ div {
     }
   }
 }
-  .cont-about{
-    // background-color: #98B6BF;
-    padding-bottom: 2em;
-  }
 
-.card-info p{
-  padding: 10px;
+.cont-about{
+  // background-color: #98B6BF;
+  padding-bottom: 2em;
 }
+
 // Featured Projects
 
 // Filter
@@ -71,6 +68,14 @@ label {
   cursor:pointer;
 }
 
+.filter-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-info p{
+  padding: 10px;
+}
 .tile {
   height:100%;
   transition:all 1s;
