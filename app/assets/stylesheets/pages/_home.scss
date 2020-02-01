@@ -38,6 +38,9 @@ div {
     padding-bottom: 2em;
   }
 
+.card-info p{
+  padding: 10px;
+}
 // Featured Projects
 
 // Filter
@@ -262,7 +265,7 @@ a {
             content: "";
             display: block;
             height: 15px;
-            position: absolute;
+            position: relative;
             top: 4px; left: 0;
             width: 15px;
             transition: background 0.3s ease-in-out,
