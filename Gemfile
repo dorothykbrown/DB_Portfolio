@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
-ruby '2.5.3'
+ruby '3.1.0'
 
 gem 'bootsnap', require: false
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem 'puma'
-gem 'rails', '5.2.3'
+gem 'rails', '7.0.4'
 gem 'redis'
 
 gem 'autoprefixer-rails'
