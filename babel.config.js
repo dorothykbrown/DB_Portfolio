@@ -37,7 +37,6 @@ module.exports = function(api) {
       ]
     ].filter(Boolean),
     plugins: [
-      require('babel-plugin-macros'),
       require('@babel/plugin-syntax-dynamic-import').default,
       isTestEnv && require('babel-plugin-dynamic-import-node'),
       require('@babel/plugin-transform-destructuring').default,
@@ -51,14 +50,6 @@ module.exports = function(api) {
         require('@babel/plugin-proposal-object-rest-spread').default,
         {
           useBuiltIns: true
-        }
-      ],
-      [
-        require('@babel/plugin-transform-runtime').default,
-        {
-          helpers: false,
-          regenerator: true,
-          corejs: false
         }
       ],
       [

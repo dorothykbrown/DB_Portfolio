@@ -12,6 +12,7 @@
     <%= javascript_include_tag('application') %>
     <%= javascript_include_tag('home') %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
   <body>
     <%= render 'shared/modal-475_10thAve' %>
@@ -28,7 +29,6 @@
     <%= render 'shared/navbar' %>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
     <%= render 'shared/footer' %>
   </body>
 </html>

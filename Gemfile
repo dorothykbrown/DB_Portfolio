@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
-ruby '3.1.0'
+ruby '3.2.0'
 
 gem 'bootsnap', require: false
 gem 'bootstrap', '~> 5.0.2'
 gem 'jbuilder', '~> 2.0'
-gem 'pg', '~> 0.21'
+gem 'pg', '~> 1.4', '>= 1.4.5'
 gem 'puma'
 gem 'rails', '7.0.4'
 gem 'redis'
@@ -14,7 +14,7 @@ gem 'font-awesome-sass', '~> 5.6.1'
 gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
-gem 'webpacker'
+gem 'jsbundling-rails'
 gem 'cloudinary', '~> 1.9.1'
 
 group :development do
