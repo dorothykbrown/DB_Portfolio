@@ -1,5 +1,5 @@
 //show hide case studies as needed using filters
-$("#project-type-selector .li").click(function () {
+$("#project-type-selector .li").on("click", function () {
   var $filterButton = $(this);
   $("#project-type-selector .li").removeClass("active");
   $filterButton.addClass("active");
